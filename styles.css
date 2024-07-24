@@ -1,0 +1,26 @@
+.background {
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url(./efe_website/space.gif);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    width: 800px;    
+}
+
+.text {
+    background-color: rgb(105, 108, 128);
+    color: white;
+    border-radius: 5px;
+}
