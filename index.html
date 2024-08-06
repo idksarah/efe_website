@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Element from Emissions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.js"></script>
     <script  type="text/javascript" src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">"
 </head>
 <body>
     <div class="background">
         <div class="content">
-            <div class="intro stuff">
-                <h1 class ="text title stuff">Determine an element given its emission signature.</h1>
+            <div class="intro">
+                <h1 class ="text title">Determine an element given its emission signature.</h1>
                 <p class="text">
                     Model provided by
                     <a href="https://github.com/fastai/fastai" class="text">fastai,</a>
-                     built with
+                        built with
                     <a href="https://colab.research.google.com/" class="text">Google Colab,</a>
-                     and hosted by
+                        and hosted by
                     <a href="https://huggingface.co/spaces" class="text">Hugging Face.</a>
                 </p>
                 <a class="text stuff" id="repo" href="https://github.com/idksarah/efe_website">Github repo</a>
             </div>
             <div class="dragNDrop">
                 <label for="inputFile" id="dropArea">
-                    <input type="file" accept="image/*" id="inputFile">
+                    <input type="file" accept="image/*" id="inputFile" hidden>
                     <div id="imgView">
-                        <img src="icon.png">
-                        <p>Drag and drop or click here<br>to upload image</p>
-                        <span>Upload any images from desktop</span>
+                        <p class = "dragNDropText text">Drag and drop or click here<br>to upload image</p>
+                        <span class = "dragNDropText text">Upload any images from desktop</span>
                     </div>
                 </label>
             </div>
